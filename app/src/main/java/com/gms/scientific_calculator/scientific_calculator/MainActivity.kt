@@ -32,8 +32,10 @@ class MainActivity : AppCompatActivity() {
         val exp = answerFiled.text
         val sol = Expression(exp.toString()).calculate()
         var answer = ""
-        if (sol.equals(NaN)) answer = "ERROR"
-        else answer = "$exp = $sol"
+
+        answer = if (sol.equals(NaN)) "ERROR"
+        else "$exp = $sol"
+
         clear(answerFiled)
         solutionField.text = answer
     }
