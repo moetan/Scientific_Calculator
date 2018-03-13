@@ -8,6 +8,7 @@ import android.widget.ExpandableListAdapter
 import android.widget.TextView
 import org.mariuszgromada.math.mxparser.Expression
 import org.w3c.dom.Text
+import java.lang.Double.NaN
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,27 +17,64 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val answer = findViewById<TextView>(R.id.field) as TextView
-        val clearButton = findViewById<Button>(R.id.clearButton) as Button
-        val button1 = findViewById<Button>(R.id.button1)  as Button
-        val button2 = findViewById<Button>(R.id.button2)  as Button
-        val button3 = findViewById<Button>(R.id.button3)  as Button
-        val addButton = findViewById<Button>(R.id.add).setOnClickListener { answer.append("+") }
-        val enter = findViewById<Button>(R.id.enter).setOnClickListener { answer.text = calc(answer).toString() }
-
-        clearButton.setOnClickListener { clear(answer) }
-        button1.setOnClickListener { answer.append("1") }
-        button2.setOnClickListener { answer.append("2") }
-        button3.setOnClickListener { answer.append("3") }
+        val answer = findViewById<TextView>(R.id.field)
+        val solution = findViewById<TextView>(R.id.answer)
+        clear(answer)
+        clear(solution)
+        setOnClicks(answer, solution)
     }
 
     fun clear(text: TextView) {
         text.text = null
     }
 
-    val calc = { t: TextView ->
-        Expression(t.toString()).calculate()
+    fun onEnter(answerFiled: TextView, solutionField: TextView) {
+        val exp = answerFiled.text
+        val sol = Expression(exp.toString()).calculate()
+        var answer = ""
+        if (sol.equals(NaN)) answer = "ERROR"
+        else answer = "$exp = $sol"
+        clear(answerFiled)
+        solutionField.text = answer
     }
 
+    fun setOnClicks(answer: TextView, solutionField: TextView) {
+        findViewById<Button>(R.id.button1).setOnClickListener { answer.append("1") }
+        findViewById<Button>(R.id.button2).setOnClickListener { answer.append("2") }
+        findViewById<Button>(R.id.button3).setOnClickListener { answer.append("3") }
+        findViewById<Button>(R.id.button4).setOnClickListener { answer.append("4") }
+        findViewById<Button>(R.id.button5).setOnClickListener { answer.append("5") }
+        findViewById<Button>(R.id.button6).setOnClickListener { answer.append("6") }
+        findViewById<Button>(R.id.button7).setOnClickListener { answer.append("7") }
+        findViewById<Button>(R.id.button8).setOnClickListener { answer.append("8") }
+        findViewById<Button>(R.id.button9).setOnClickListener { answer.append("9") }
+        findViewById<Button>(R.id.button10).setOnClickListener { answer.append("0") }
+
+        findViewById<Button>(R.id.add).setOnClickListener { answer.append("+") }
+        findViewById<Button>(R.id.minusButton).setOnClickListener { answer.append("-") }
+        findViewById<Button>(R.id.timesButton).setOnClickListener { answer.append("*") }
+        findViewById<Button>(R.id.divide).setOnClickListener { answer.append("/") }
+
+        findViewById<Button>(R.id.pi).setOnClickListener { answer.append("pi") }
+
+        findViewById<Button>(R.id.openPara).setOnClickListener { answer.append("(") }
+        findViewById<Button>(R.id.closePara).setOnClickListener { answer.append(")") }
+        findViewById<Button>(R.id.enter).setOnClickListener{ onEnter(answer, solutionField)}
+
+        findViewById<Button>(R.id.clearButton).setOnClickListener { answer.text = null }
+
+        findViewById<Button>(R.id.delete).setOnClickListener { delete(answer) }
+
+        findViewById<Button>(R.id.dot).setOnClickListener { answer.append(".") }
+    }
+
+    fun delete(answer: TextView) {
+        try {
+            val updateText = answer.text.toString().substring(1)
+            answer.text = updateText
+        } catch (ex: IndexOutOfBoundsException) {
+            return
+        }
+    }
 
 }
