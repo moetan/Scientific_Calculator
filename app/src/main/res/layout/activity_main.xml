@@ -6,14 +6,5 @@
     android:layout_height="match_parent"
     tools:context="com.gms.scientific_calculator.scientific_calculator.MainActivity">
 
-    <Button
-        android:id="@+id/tools"
-        android:layout_width="226dp"
-        android:layout_height="54dp"
-        android:text="@string/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="202dp" />
 
 </android.support.constraint.ConstraintLayout>
