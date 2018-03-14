@@ -115,23 +115,23 @@
         android:text="0" />
 
     <TextView
-        android:id="@+id/field"
+        android:id="@+id/mathField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
-        android:text="Test" />
+        android:text="" />
 
 
     <TextView
-        android:id="@+id/answer"
+        android:id="@+id/answerField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:text="Test" />
+        android:text="" />
 
     <Button
         android:id="@+id/clearButton"
