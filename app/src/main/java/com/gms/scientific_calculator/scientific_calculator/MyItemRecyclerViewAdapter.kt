@@ -28,7 +28,7 @@ class MyItemRecyclerViewAdapter(private val mValues: List<DummyItem>, private va
         holder.mContentView.text = mValues[position].content
 
         holder.mView.setOnClickListener {
-            mListener?.onListFragmentInteraction(holder.mItem)
+            //mListener?.onListFragmentInteraction(holder.mItem)
         }
     }
 
