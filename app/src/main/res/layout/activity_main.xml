@@ -16,28 +16,28 @@
     <Button
         android:id="@+id/calculate_button"
         android:layout_width="200dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="calculate" />
     <Button
         android:id="@+id/graph_button"
         android:layout_width="200dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="graph"/>
 
     <Button
         android:id="@+id/function_button"
         android:layout_width="200dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="functions" />
     <Button
         android:id="@+id/tools_button"
         android:layout_width="200dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="tools"/>
     <Button
         android:id="@+id/games_button"
         android:layout_width="200dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="games"/>
 </LinearLayout>
 
