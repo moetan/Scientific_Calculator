@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.gms.scientific_calculator.scientific_calculator.life_application"
+    tools:context="com.gms.scientific_calculator.scientific_calculator.content_life_application"
     tools:showIn="@layout/life_application">
 
     <Button

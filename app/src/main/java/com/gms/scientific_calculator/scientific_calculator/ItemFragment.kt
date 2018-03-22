@@ -37,9 +37,9 @@ class ItemFragment : Fragment() {
         }
     }
 
-   /* override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater!!.inflate(R.layout.fragment_item_list, container, false)
+        val view = inflater!!.inflate(R.layout.fragment_item, container, false)
 
         // Set the adapter
         if (view is RecyclerView) {
@@ -52,7 +52,7 @@ class ItemFragment : Fragment() {
             view.adapter = MyItemRecyclerViewAdapter(DummyContent.ITEMS, mListener)
         }
         return view
-    }*/
+    }
 
 
     override fun onAttach(context: Context?) {

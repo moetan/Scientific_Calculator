@@ -17,11 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".life_application"
+            android:name="life_application"
             android:label="@string/title_activity_life_application"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Interest" />
-        <activity android:name=".GraphActivity"></activity>
+        <activity android:name="Interest"></activity>
     </application>
 
 </manifest>

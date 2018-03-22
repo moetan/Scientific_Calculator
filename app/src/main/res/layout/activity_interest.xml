@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gms.scientific_calculator.scientific_calculator.Interest">
+    tools:context="com.gms.scientific_calculator.scientific_calculator"
+>
 
 </android.support.constraint.ConstraintLayout>
