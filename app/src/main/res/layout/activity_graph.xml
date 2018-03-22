@@ -7,10 +7,15 @@
     tools:context="com.gms.scientific_calculator.scientific_calculator.GraphActivity">
 
     <LinearLayout
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5" />
     </LinearLayout>
 
 
