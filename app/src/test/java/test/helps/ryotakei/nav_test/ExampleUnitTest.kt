@@ -1,4 +1,4 @@
-package com.gms.scientific_calculator.scientific_calculator
+package test.helps.ryotakei.nav_test
 
 import org.junit.Test
 

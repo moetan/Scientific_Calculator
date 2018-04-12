@@ -1,4 +1,4 @@
-package com.gms.scientific_calculator.scientific_calculator
+package test.helps.ryotakei.nav_test
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.gms.scientific_calculator.scientific_calculator", appContext.packageName)
+        assertEquals("test.helps.ryotakei.nav_test", appContext.packageName)
     }
 }
