@@ -1,11 +1,30 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Nav_test</string>
+=======
+    <string name="app_name">Scientific_Calculator</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_navig">Navig</string>
+>>>>>>> 2288836aa9dfe058a37db91341705d1def1a2497
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+<<<<<<< HEAD
+    <string name="title_activity_navigator">Navigator</string>
+=======
+>>>>>>> 5414f2aaf9d87a146d246ef7217420f912a87272
+>>>>>>> 2288836aa9dfe058a37db91341705d1def1a2497
 </resources>

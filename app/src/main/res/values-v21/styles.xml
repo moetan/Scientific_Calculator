@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<resources></resources>
+=======
+>>>>>>> 2288836aa9dfe058a37db91341705d1def1a2497
 <resources>
 
     <style name="AppTheme.NoActionBar">
@@ -6,3 +12,7 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 </resources>
+<<<<<<< HEAD
+=======
+>>>>>>> 5414f2aaf9d87a146d246ef7217420f912a87272
+>>>>>>> 2288836aa9dfe058a37db91341705d1def1a2497
