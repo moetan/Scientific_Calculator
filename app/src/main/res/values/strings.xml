@@ -13,5 +13,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="title_activity_navigator">Navigator</string>
+=======
+>>>>>>> 5414f2aaf9d87a146d246ef7217420f912a87272
 </resources>
