@@ -12,6 +12,6 @@ import android.view.ViewGroup
 
 class Second : Fragment() {
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        return inflater!!.inflate(R.layout.second_layout, container, false)
+        return inflater!!.inflate(R.layout.layout/graph.xml, container, false)
     }
 }
