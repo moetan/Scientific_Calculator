@@ -20,7 +20,7 @@ class CalcFragment: Fragment() {
         return myView
     }
 
-    fun TextView.clear() { // extension method for TextView class. clears up text in the TextView
+    fun TextView.clear() { 
         this.text = null
     }
 
