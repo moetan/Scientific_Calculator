@@ -43,7 +43,7 @@ class CalcFragment: Fragment() {
     }
 
     /**
-     * All it does is initialize buttons.
+     * initialize buttons.
      * setOnClickListener takes lambda
      * Not storing them to variables. Less memory usage. haha
      *
