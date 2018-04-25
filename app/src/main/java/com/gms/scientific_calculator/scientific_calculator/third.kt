@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import test.helps.ryotakei.nav_test.R
 
-package test.helps.ryotakei.nav_test
 
 class Third : Fragment() {
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
