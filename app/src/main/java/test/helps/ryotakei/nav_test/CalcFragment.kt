@@ -10,9 +10,6 @@ import android.widget.TextView
 import org.mariuszgromada.math.mxparser.Expression
 import kotlin.Double.Companion.NaN
 
-/**
- * Created by ryotakei on 4/12/18.
- */
 
 class CalcFragment: Fragment() {
     lateinit var myView: View
@@ -43,7 +40,7 @@ class CalcFragment: Fragment() {
     }
 
     /**
-     * initialize buttons.
+     * All it does is initialize buttons.
      * setOnClickListener takes lambda
      * Not storing them to variables. Less memory usage. haha
      *
