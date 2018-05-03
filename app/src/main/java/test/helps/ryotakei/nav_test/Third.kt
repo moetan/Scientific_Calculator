@@ -34,14 +34,6 @@ class Third : Fragment() {
         solutionField.text = answer // append answer to solutionField
     }
 
-    /**
-     * All it does is initialize buttons.
-     * setOnClickListener takes lambda
-     * Not storing them to variables. Less memory usage. haha
-     *
-     * @param mathField TextView which shows equation
-     * @param solutionField TextView which shows answer of the equation
-     */
     fun initButtons(mathField: TextView, solutionField: TextView) {
         myView.findViewById<Button>(R.id.button1).setOnClickListener { mathField.append("1") }
         myView.findViewById<Button>(R.id.button2).setOnClickListener { mathField.append("2") }
@@ -53,18 +45,18 @@ class Third : Fragment() {
         myView.findViewById<Button>(R.id.button8).setOnClickListener { mathField.append("8") }
         myView.findViewById<Button>(R.id.button9).setOnClickListener { mathField.append("9") }
         myView.findViewById<Button>(R.id.button10).setOnClickListener { mathField.append("0") }
-        myView.findViewById<Button>(R.id.add).setOnClickListener { mathField.append("+") }
-        myView.findViewById<Button>(R.id.minusButton).setOnClickListener { mathField.append("-") }
-        myView.findViewById<Button>(R.id.timesButton).setOnClickListener { mathField.append("*") }
-        myView.findViewById<Button>(R.id.divide).setOnClickListener { mathField.append("/") }
-        myView.findViewById<Button>(R.id.pi).setOnClickListener { mathField.append("pi") }
-        myView.findViewById<Button>(R.id.openPara).setOnClickListener { mathField.append("(") }
-        myView.findViewById<Button>(R.id.closePara).setOnClickListener { mathField.append(")") }
+        myView.findViewById<Button>(R.id.tipavgservice).setOnClickListener { mathField.append("*.15") }
+        myView.findViewById<Button>(R.id.tipgreatservice).setOnClickListener { mathField.append("*.20") }
+        myView.findViewById<Button>(R.id.tipbadservice).setOnClickListener { mathField.append("*.10") }
+        myView.findViewById<Button>(R.id.inchtocm).setOnClickListener { mathField.append("*2.54") }
+        myView.findViewById<Button>(R.id.ibtokg).setOnClickListener { mathField.append("*.4536") }
+        myView.findViewById<Button>(R.id.oztomL).setOnClickListener { mathField.append("*29.5735") }
+        myView.findViewById<Button>(R.id.mitokm).setOnClickListener { mathField.append("*1.60934") }
         myView.findViewById<Button>(R.id.enter).setOnClickListener{ onEnter(mathField, solutionField)}
         myView.findViewById<Button>(R.id.clearButton).setOnClickListener { mathField.clear() }
         myView.findViewById<Button>(R.id.delete).setOnClickListener { delete(mathField) }
         myView.findViewById<Button>(R.id.dot).setOnClickListener { mathField.append(".") }
-    }
+
 
     fun initElements() {
         val mathField: TextView = myView.findViewById<TextView>(R.id.mathField)

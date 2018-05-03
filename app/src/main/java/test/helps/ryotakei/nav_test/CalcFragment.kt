@@ -20,7 +20,7 @@ class CalcFragment: Fragment() {
         return myView
     }
 
-    fun TextView.clear() { 
+    fun TextView.clear() {
         this.text = null
     }
 

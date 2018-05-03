@@ -209,13 +209,13 @@
         android:text="ib to kg" />
 
     <Button
-        android:id="@+id/FtoC"
+        android:id="@+id/oztomL"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/openPara"
         android:layout_toRightOf="@id/openPara"
-        android:text="F to C" />
+        android:text="oz to mL" />
 
     <Button
         android:id="@+id/delete"
@@ -227,11 +227,11 @@
         android:text="DEL" />
 
     <Button
-        android:id="@+id/CtoK"
+        android:id="@+id/mitokm"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/button10"
         android:layout_toLeftOf="@id/button10"
-        android:text="C to K" />
+        android:text="mi to km" />
 </RelativeLayout>
