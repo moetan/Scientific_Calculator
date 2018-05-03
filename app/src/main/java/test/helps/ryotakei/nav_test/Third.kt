@@ -20,7 +20,7 @@ class Third : Fragment() {
         return myView
     }
 
-    fun TextView.clear() { 
+    fun TextView.clear() {
         this.text = null
     }
 
@@ -31,7 +31,7 @@ class Third : Fragment() {
         var answer = if (sol.equals(NaN)) "ERROR" else "$exp = $sol"
 
         answerFiled.clear()
-        solutionField.text = answer // append answer to solutionField
+        solutionField.text = answer
     }
 
     fun initButtons(mathField: TextView, solutionField: TextView) {
@@ -63,17 +63,13 @@ class Third : Fragment() {
         val answerField = myView.findViewById<TextView>(R.id.answerField)
         initButtons(mathField, answerField)
     }
-    /**
-     * called when "DEL" button is pressed
-     * Deletes one char from TextView
-     * @param field TextView
-     */
+
     fun delete(field: TextView) {
         try {
-            val updateText = field.text.toString().substring(1) // takes everything but last char in the TextView
-            field.text = updateText // append the text
-        } catch (ex: IndexOutOfBoundsException) { // need this when length is 0(aka null)
-            return // if it gives me IndexOutOfBoundsException, I don't care, it just means it's empty, return it.
+            val updateText = field.text.toString().substring(1)
+            field.text = updateText
+        } catch (ex: IndexOutOfBoundsException) {
+            return
         }
     }
 }
