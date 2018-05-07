@@ -1,4 +1,4 @@
-package test.helps.ryotakei.nav_test
+package com.gms.scientific_calculator.scientific_calculator
 
 import android.app.Fragment
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import org.mariuszgromada.math.mxparser.Expression
+import test.helps.ryotakei.nav_test.R
 import kotlin.Double.Companion.NaN
 
 
