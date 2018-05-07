@@ -15,7 +15,7 @@ import kotlin.Double.Companion.NaN
 class Third : Fragment() {
     lateinit var myView: View
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        myview = inflater!!.inflate(R.layout.tools, container, false)
+        myView = inflater!!.inflate(R.layout.tools, container, false)
         initElements()
         return myView
     }
