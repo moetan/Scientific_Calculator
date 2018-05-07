@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="test.helps.ryotakei.test.helps.calcapp.nav_test.MainActivity"
+            android:name="com.gms.scientific_calculator.scientific_calculator.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
