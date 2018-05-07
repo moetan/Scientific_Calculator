@@ -35,7 +35,7 @@ class Third : Fragment() {
         solutionField.text = answer
     }
 
-    fun initButtons(mathField: TextView, solutionField: TextView) {
+    fun initButtons (mathField: TextView, solutionField: TextView) {
         myView.findViewById<Button>(R.id.button1).setOnClickListener { mathField.append("1") }
         myView.findViewById<Button>(R.id.button2).setOnClickListener { mathField.append("2") }
         myView.findViewById<Button>(R.id.button3).setOnClickListener { mathField.append("3") }
@@ -56,7 +56,7 @@ class Third : Fragment() {
         myView.findViewById<Button>(R.id.enter).setOnClickListener { onEnter(mathField, solutionField) }
         myView.findViewById<Button>(R.id.clearButton).setOnClickListener { mathField.clear() }
         myView.findViewById<Button>(R.id.delete).setOnClickListener { delete(mathField) }
-        myView.findViewById<Button>(R.id.dot).setOnClickListener { mathField.append(".") }
+        myView.findViewById<Button>(R.id.dot).setOnClickListener { mathField.append(".") }}
 
 
         fun initElements() {
@@ -74,4 +74,3 @@ class Third : Fragment() {
             }
         }
     }
-}
