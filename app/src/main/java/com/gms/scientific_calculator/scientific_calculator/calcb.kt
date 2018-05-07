@@ -29,7 +29,7 @@ class CalcFragment: Fragment() {
     fun onEnter(answerFiled: TextView, solutionField: TextView) {
         val exp = answerFiled.text  // getting expression from answerField
         val sol = Expression(exp.toString()).calculate() 
-        var answer = if (sol.equals(NaN)) "ERROR" else "$exp = $sol" // answer will be "ERROR" if the 'sol' variable is NaN
+        var answer = if (sol.equals(NaN)) "ERROR" else "$exp = $sol"
 
         answerFiled.clear()
         solutionField.text = answer // append answer to solutionField

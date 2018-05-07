@@ -15,7 +15,7 @@ import kotlin.Double.Companion.NaN
 class Third : Fragment() {
     lateinit var myView: View
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        myview = inflater!!.inflate(R.layout.third_layout, container, false)
+        myview = inflater!!.inflate(R.layout.tools, container, false)
         initElements()
         return myView
     }
@@ -52,25 +52,25 @@ class Third : Fragment() {
         myView.findViewById<Button>(R.id.ibtokg).setOnClickListener { mathField.append("*.4536") }
         myView.findViewById<Button>(R.id.oztomL).setOnClickListener { mathField.append("*29.5735") }
         myView.findViewById<Button>(R.id.mitokm).setOnClickListener { mathField.append("*1.60934") }
-        myView.findViewById<Button>(R.id.enter).setOnClickListener{ onEnter(mathField, solutionField)}
+        myView.findViewById<Button>(R.id.enter).setOnClickListener { onEnter(mathField, solutionField) }
         myView.findViewById<Button>(R.id.clearButton).setOnClickListener { mathField.clear() }
         myView.findViewById<Button>(R.id.delete).setOnClickListener { delete(mathField) }
         myView.findViewById<Button>(R.id.dot).setOnClickListener { mathField.append(".") }
 
 
-    fun initElements() {
-        val mathField: TextView = myView.findViewById<TextView>(R.id.mathField)
-        val answerField = myView.findViewById<TextView>(R.id.answerField)
-        initButtons(mathField, answerField)
-    }
+        fun initElements() {
+            val mathField: TextView = myView.findViewById<TextView>(R.id.mathField)
+            val answerField = myView.findViewById<TextView>(R.id.answerField)
+            initButtons(mathField, answerField)
+        }
 
-    fun delete(field: TextView) {
-        try {
-            val updateText = field.text.toString().substring(1)
-            field.text = updateText
-        } catch (ex: IndexOutOfBoundsException) {
-            return
+        fun delete(field: TextView) {
+            try {
+                val updateText = field.text.toString().substring(1)
+                field.text = updateText
+            } catch (ex: IndexOutOfBoundsException) {
+                return
+            }
         }
     }
 }
-
