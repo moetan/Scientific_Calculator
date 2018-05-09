@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:id="@+id/third"
+        android:id="@+id/nav_second"
         android:text="Jason Add Stuff" />
 
 </RelativeLayout>

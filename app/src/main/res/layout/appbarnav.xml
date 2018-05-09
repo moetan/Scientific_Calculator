@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="test.helps.ryotakei.nav_test.com.gms.scientific_calculator.scientific_calculator.MainActivity">
-
+    tools:context="com.gms.scientific_calculator.scientific_calculator.MainActivity">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
