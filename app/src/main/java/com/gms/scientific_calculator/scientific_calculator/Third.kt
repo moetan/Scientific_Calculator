@@ -12,7 +12,6 @@ import test.helps.ryotakei.nav_test.R
 import kotlin.Double.Companion.NaN
 
 
-
 class Third : Fragment() {
     lateinit var myView: View
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {

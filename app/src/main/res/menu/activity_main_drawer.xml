@@ -11,11 +11,11 @@
         <item
             android:id="@+id/nav_second"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="SECOND" />
+            android:title="Functions" />
         <item
             android:id="@+id/nav_third"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="THIRD" />
+            android:title="Tools" />
     </group>
 
     <item android:title="Communicate">
