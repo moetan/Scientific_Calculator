@@ -11,15 +11,18 @@ import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.appbarnav.*
 import test.helps.ryotakei.nav_test.R
+import android.support.design.widget.FloatingActionButton
+
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
+    //var fab: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
+        //fab = (FloatingActionButton()) findViewById(R.id.fab);
         fab.setOnClickListener { view ->
             Snackbar.make(view, "click", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
@@ -32,6 +35,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         nav_view.setNavigationItemSelectedListener(this)
     }
+
 
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
