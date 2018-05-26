@@ -137,7 +137,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/add"
+        android:layout_above="@id/tipavgservice"
         android:layout_toRightOf="@id/button3"
         android:text="C" />
 
@@ -155,7 +155,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/add"
+        android:layout_above="@+id/tipavgservice"
         android:layout_alignBaseline="@id/button4"
         android:layout_toRightOf="@id/button6"
         android:text="bad service" />
@@ -174,9 +174,9 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/divide"
+        android:layout_above="@id/tipgreatservice"
         android:layout_alignBaseline="@id/button10"
-        android:layout_below="@+id/add"
+        android:layout_below="@+id/tipavgservice"
         android:layout_toRightOf="@id/button9"
         android:text="inch to cm" />
 
@@ -186,7 +186,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/timesButton"
+        android:layout_below="@id/inchtocm"
         android:layout_toRightOf="@id/button9"
         android:text="Enter" />
 
@@ -214,8 +214,8 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/openPara"
-        android:layout_toRightOf="@id/openPara"
+        android:layout_alignBaseline="@id/ibtokg"
+        android:layout_toRightOf="@id/ibtokg"
         android:text="oz to mL" />
 
     <Button
@@ -223,8 +223,8 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/openPara"
-        android:layout_toLeftOf="@id/openPara"
+        android:layout_alignBaseline="@id/ibtokg"
+        android:layout_toLeftOf="@id/ibtokg"
         android:text="DEL" />
 
     <Button

@@ -45,9 +45,9 @@ class Third : Fragment() {
         myView.findViewById<Button>(R.id.button8).setOnClickListener { mathField.append("8") }
         myView.findViewById<Button>(R.id.button9).setOnClickListener { mathField.append("9") }
         myView.findViewById<Button>(R.id.button10).setOnClickListener { mathField.append("0") }
-        myView.findViewById<Button>(R.id.tipavgservice).setOnClickListener { mathField.append("*.15") }
-        myView.findViewById<Button>(R.id.tipgreatservice).setOnClickListener { mathField.append("*.20") }
-        myView.findViewById<Button>(R.id.tipbadservice).setOnClickListener { mathField.append("*.10") }
+        myView.findViewById<Button>(R.id.tipavgservice).setOnClickListener { mathField.append("*0.15") }
+        myView.findViewById<Button>(R.id.tipgreatservice).setOnClickListener { mathField.append("*0.20") }
+        myView.findViewById<Button>(R.id.tipbadservice).setOnClickListener { mathField.append("*0.10") }
         myView.findViewById<Button>(R.id.inchtocm).setOnClickListener { mathField.append("*2.54") }
         myView.findViewById<Button>(R.id.ibtokg).setOnClickListener { mathField.append("*.4536") }
         myView.findViewById<Button>(R.id.oztomL).setOnClickListener { mathField.append("*29.5735") }
